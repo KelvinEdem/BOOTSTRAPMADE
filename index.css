@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --primary-color: #6200ea;
+  --secondary-color: #c4efea;
+  --background-color: #f5f5f5;
+  --rounded: 8px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    padding-block: 30px;
+    
+
+    span{
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .nav-group {
+        display: flex;
+        gap: 450px;
+    }
+    .nav-links {
+        display: flex;
+        gap: 25px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: rgb(94, 92, 92);
+            }
+        a:hover{
+                color: var(--primary-color);}
+
+        a.current{
+                color: var(--primary-color);
+            }
+    }
+}
+
+.hero {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+
+    min-height: 60vh;
+    text-align: center;
+
+    margin: 0 auto;
+   padding-block: 5rem;
+
+   .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        margin-top: 5.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        max-width: 80%;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(7, 7, 7);
+        background-color: #efd9b8;
+        padding: 10px 20px;
+        border-radius: var(--rounded);
+        border-color: #802b2b;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: #db8606;
+        }
+    }
+}
+.features-section {
+    display: flex;
+    /* flex-direction: column;
+    /* justify-content: center; */
+    height: 100vh;
+    
+    margin-left: 0px;
+    width: 100;
+    padding-block: 5rem;
+    background-color: aliceblue;
+    gap: 5rem;
+
+    /* max-width: 600px; */
+}
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+    /* max-width: 650px; */
+   
+    
+     h1 {
+        font-size: 2.0rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        /* margin-top: 15rem; */
+        margin-left: 120px;
+        text-align: justify;
+         max-width: 650px;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        margin-left: 120px;
+        text-align: justify;
+         max-width: 650px;
+        
+    }
+
+}
+
+ .feature-textbox {
+   
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(252, 250, 250);
+    /* padding-left: 500px; */
+    width: 50%;
+    padding: 1rem;
+    
+    
+    h2{
+        font-size: 0.9rem;
+        padding-bottom: 2rem;
+    }
+
+
+    form{
+        padding-block: 1rem;
+        input{
+            padding: 6px 12px; 
+            width: 100%;
+            margin-block: 0.5rem;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+           padding: 0.8rem;
+        }
+
+        button{
+            margin-left: 40%;
+            margin-top: 3%;
+            background-color: #db8606;
+            color: aliceblue;
+            width: 20%;
+            height: 10%;
+
+            h4{
+                padding-block: 5px;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+
+}
+
+.construction-feature{
+    background-color: #802b2b;
+}
+
+.UpConstruction{
+    text-align: center;
+    justify-content: center;
+
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+   
